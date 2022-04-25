@@ -12,13 +12,13 @@ Create a slack bot, and create a web-hook for the bot at
 
 ```console
 yarn install
-yarn exec clasp login
+yarn clasp login
 ```
 
 Replace the timezone in [src/appsscript.json](src/appsscript.json).
 
 ```console
-yarn exec clasp create --title gas-example --type forms --rootDir src
+yarn clasp create --title gas-example --type forms --rootDir src
 ```
 
 Add a trigger in `Triggers`.
