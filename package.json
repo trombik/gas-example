@@ -6,5 +6,6 @@
   "license": "MIT",
   "scripts": {
     "test": "prettier --check src"
-  }
+  },
+  "version": "0.0.0"
 }
