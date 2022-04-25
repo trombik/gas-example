@@ -1,6 +1,10 @@
 {
   "dependencies": {
-    "@google/clasp": "^2.4.1"
+    "@google/clasp": "^2.4.1",
+    "prettier": "^2.6.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "prettier --check src"
+  }
 }
