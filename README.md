@@ -8,7 +8,8 @@ Enable Google Apps Script API at
 [https://script.google.com/home/usersettings](https://script.google.com/home/usersettings).
 
 Create a slack bot, and create a web-hook for the bot at
-[https://api.slack.com/apps](https://api.slack.com/apps).
+[https://api.slack.com/apps](https://api.slack.com/apps). See [Sending
+messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks).
 
 ```console
 yarn install
@@ -31,6 +32,25 @@ Add a trigger in `Triggers`.
 
 Go to `Project Settings`. Under `Script Properties`, create a script property
 with `webhook` as key. The value is your web-hook URL.
+
+## GitHub Repository Secrets
+
+To push from GitHub Actions workflows, see
+[.github/workflows/push.yml](.github/workflows/push.yml).
+
+Required GitHub Repository Secrets to push from GitHub Actions workflows.
+
+| Name | Key in `.clasprc.json` |
+|------|-------------|
+| `ACCESS_TOKEN` | `access_token` |
+| `ID_TOKEN` | `id_token` |
+| `REFRESH_TOKEN` | `refresh_token` |
+| `CLIENT_ID` | `client_id` |
+| `CLIENT_SECRET` | `client_secret` |
+
+| Name | Key in `.clasp.json` |
+|------|----------------------|
+| `SCRIPT_ID` | `script_id` |
 
 ## Notes
 
